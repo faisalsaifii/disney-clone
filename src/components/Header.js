@@ -1,7 +1,13 @@
+import { auth, provider } from '../firebase';
 import React from 'react'
 import styled from 'styled-components'
 
 const Header = (props) => {
+
+    const handleAuth = () => {
+        auth.signInWithPopup(provider);
+    }
+
   return (
     <Nav>
         <Logo>
@@ -54,14 +60,14 @@ const Login = styled.a`
     border-radius: 4px;
     border: 1px solid #f9f9f9;
     letter-spacing: 1.5px;
-    padding: 0px 16px;
+    padding: 10px 16px;
     text-transform: uppercase;
     transition: all 0.2s ease 0s;
-
     &:hover {
         background-color: #f9f9f9;
         color: #000;
         border-color: transparent;
+        cursor: pointer;
     }
 `;
 const NavMenu = styled.div`
