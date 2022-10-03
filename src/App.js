@@ -4,15 +4,13 @@ import Login from './components/Login';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Router>
         <Routes>
-          <Route exact path="/">
-            <Login/>
-          </Route>
+          <Route exact path='/' element={<Login/>} />
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }
 
