@@ -1,7 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
+import { initializeApp } from "firebase/app";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getStorage } from "firebase/storage";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyBx7SUFdwC4kdSqDVJ_SQLF4OcEuJwJItQ",
+    authDomain: "disney-clone-16168.firebaseapp.com",
+    projectId: "disney-clone-16168",
+    storageBucket: "disney-clone-16168.appspot.com",
+    messagingSenderId: "973506288787",
+    appId: "1:973506288787:web:dd41c3e2321e7a2d834166",
+    measurementId: "G-00G6NSL44E"
+  };
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const storage = getStorage();
 
 const Header = (props) => {
+
+    const handleSignIn = () => {
+        signInWithPopup(auth, provider)
+    }
 
   return (
     <Nav>
@@ -48,7 +70,9 @@ const Header = (props) => {
                 </span>
             </a>
         </NavMenu>
-        <Login>Login</Login>
+        <Login
+            onClick={handleSignIn}
+        >Login</Login>
     </Nav>
   )
 }
