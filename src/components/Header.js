@@ -5,9 +5,11 @@ const Header = (props) => {
 
   return (
     <Nav>
-        <Logo>
-            <img src = "/images/logo.svg" alt="Disney+"/>
-        </Logo>
+        <a href='/'>
+            <Logo>
+                <img src = "/images/logo.svg" alt="Disney+"/>
+            </Logo>
+        </a>
         <NavMenu>
             <a href='/home'>
                 <img src='/images/home-icon.svg' alt='home'/>
