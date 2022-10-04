@@ -5,43 +5,43 @@ const Header = (props) => {
 
   return (
     <Nav>
-        <a href='/'>
+        <a href='/disney-clone'>
             <Logo>
                 <img src = "/images/logo.svg" alt="Disney+"/>
             </Logo>
         </a>
         <NavMenu>
-            <a href='/home'>
+            <a href='/disney-clone/home'>
                 <img src='/images/home-icon.svg' alt='home'/>
                 <span>
                     HOME
                 </span>
             </a>
-            <a href='/search'>
+            <a href='/disney-clone/search'>
                 <img src='/images/search-icon.svg' alt='search'/>
                 <span>
                     SEARCH
                 </span>
             </a>
-            <a href='/watchlist'>
+            <a href='/disney-clone/watchlist'>
                 <img src='/images/watchlist-icon.svg' alt='watchlist'/>
                 <span>
                     WATCHLIST
                 </span>
             </a>
-            <a href='/originals'>
+            <a href='/disney-clone/originals'>
                 <img src='/images/original-icon.svg' alt='originals'/>
                 <span>
                     ORIGINALS
                 </span>
             </a>
-            <a href='/movies'>
+            <a href='/disney-clone/movies'>
                 <img src='/images/movie-icon.svg' alt='movies'/>
                 <span>
                     MOVIES
                 </span>
             </a>
-            <a href='/series'>
+            <a href='/disney-clone/series'>
                 <img src='/images/series-icon.svg' alt='series'/>
                 <span>
                     SERIES

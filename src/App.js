@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route exact path='/' element={<Login/>} />
+          <Route exact path='/disney-clone' element={<Login/>} />
         </Routes>
       </Router>
   );
