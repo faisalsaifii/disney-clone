@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/disney-clone/static/css/main.cd59c33a.css",
-    "main.js": "/disney-clone/static/js/main.5ecdf446.js",
+    "main.js": "/disney-clone/static/js/main.edc8dad2.js",
+    "static/media/login-background.jpg": "/disney-clone/static/media/login-background.05b1a1b3088cbb458939.jpg",
+    "static/media/cta-logo-two.png": "/disney-clone/static/media/cta-logo-two.e69ae55254630c715843.png",
+    "static/media/cta-logo-one.svg": "/disney-clone/static/media/cta-logo-one.51d9b8d70927afb97d9b4dcc166ed8f6.svg",
+    "static/media/logo.svg": "/disney-clone/static/media/logo.8205aae82a3c67ca943e8628e2183b0d.svg",
+    "static/media/movie-icon.svg": "/disney-clone/static/media/movie-icon.1a6f6ada8d37edf9c4a59f7ad16816f5.svg",
     "index.html": "/disney-clone/index.html",
+    "static/media/series-icon.svg": "/disney-clone/static/media/series-icon.4d410db656710c14710332d27cec00a9.svg",
+    "static/media/search-icon.svg": "/disney-clone/static/media/search-icon.46aff20f64bfe1a300ddd5ef420fc006.svg",
+    "static/media/watchlist-icon.svg": "/disney-clone/static/media/watchlist-icon.0b5a945bede19872d5d95984d35ce12d.svg",
+    "static/media/original-icon.svg": "/disney-clone/static/media/original-icon.d7752d89e5a5d2b6276338bea45f413b.svg",
+    "static/media/home-icon.svg": "/disney-clone/static/media/home-icon.b6a11f9b406f2f13cd82608a276428e5.svg",
     "main.cd59c33a.css.map": "/disney-clone/static/css/main.cd59c33a.css.map",
-    "main.5ecdf446.js.map": "/disney-clone/static/js/main.5ecdf446.js.map"
+    "main.edc8dad2.js.map": "/disney-clone/static/js/main.edc8dad2.js.map"
   },
   "entrypoints": [
     "static/css/main.cd59c33a.css",
-    "static/js/main.5ecdf446.js"
+    "static/js/main.edc8dad2.js"
   ]
 }
