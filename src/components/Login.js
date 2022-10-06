@@ -1,15 +1,18 @@
 import styled from 'styled-components'
 import React from 'react'
+import CTALogoOneIcon from '../images/cta-logo-one.svg'
+import CTALogoTwoIcon from '../images/cta-logo-two.png'
+import bgimg from '../images/login-background.jpg'
 
 const Login = (props) => {
   return (
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src = "/images/cta-logo-one.svg" alt = "Disney"/>
+          <CTALogoOne src = {CTALogoOneIcon} alt = "Disney"/>
           <SignUp>GET ALL THERE</SignUp>
           <Description>Get Premier Access to Raya and the Last Dragon for an additional fee with a Disney+ Subscription.</Description>
-          <CTALogoTwo src = "/images/cta-logo-two.png" alt = "Shows"/>
+          <CTALogoTwo src = {CTALogoTwoIcon} alt = "Shows"/>
         </CTA>
         <BgImage />
       </Content>
@@ -26,7 +29,7 @@ const Container = styled.section`
 `;
 
 const BgImage = styled.div`
-  background-image: url("/images/login-background.jpg");
+  background-image: url(${bgimg});
   z-index: -1;
   background-position: top;
   background-size: cover;
@@ -79,7 +82,7 @@ const SignUp = styled.a`
   color: #f9f9f9;
   background-color: #0063e5;
   margin-bottom: 12px;
-  widht: 100%;
+  width: 100%;
   letter-spacing: 1.5px;
   font-size: 18px;
   padding: 16.5px 0;

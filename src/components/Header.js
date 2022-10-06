@@ -3,6 +3,13 @@ import styled from 'styled-components'
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { getStorage } from "firebase/storage";
+import logoIcon from "../images/logo.svg";
+import homeIcon from "../images/home-icon.svg";
+import watchlistIcon from "../images/watchlist-icon.svg";
+import movieIcon from "../images/movie-icon.svg";
+import searchIcon from "../images/search-icon.svg";
+import originalsIcon from "../images/original-icon.svg";
+import seriesIcon from "../images/series-icon.svg";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBx7SUFdwC4kdSqDVJ_SQLF4OcEuJwJItQ",
@@ -27,44 +34,42 @@ const Header = (props) => {
 
   return (
     <Nav>
-        <a href='/disney-clone'>
             <Logo>
-                <img src = "/images/logo.svg" alt="Disney+"/>
+                <img src = {logoIcon} alt="Disney+"/>
             </Logo>
-        </a>
         <NavMenu>
             <a href='/disney-clone/home'>
-                <img src='/images/home-icon.svg' alt='home'/>
+                <img src={homeIcon} alt='home'/>
                 <span>
                     HOME
                 </span>
             </a>
             <a href='/disney-clone/search'>
-                <img src='/images/search-icon.svg' alt='search'/>
+                <img src={searchIcon} alt='search'/>
                 <span>
                     SEARCH
                 </span>
             </a>
             <a href='/disney-clone/watchlist'>
-                <img src='/images/watchlist-icon.svg' alt='watchlist'/>
+                <img src={watchlistIcon} alt='watchlist'/>
                 <span>
                     WATCHLIST
                 </span>
             </a>
             <a href='/disney-clone/originals'>
-                <img src='/images/original-icon.svg' alt='originals'/>
+                <img src={originalsIcon} alt='originals'/>
                 <span>
                     ORIGINALS
                 </span>
             </a>
             <a href='/disney-clone/movies'>
-                <img src='/images/movie-icon.svg' alt='movies'/>
+                <img src={movieIcon} alt='movies'/>
                 <span>
                     MOVIES
                 </span>
             </a>
             <a href='/disney-clone/series'>
-                <img src='/images/series-icon.svg' alt='series'/>
+                <img src={seriesIcon} alt='series'/>
                 <span>
                     SERIES
                 </span>
